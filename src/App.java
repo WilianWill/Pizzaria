@@ -101,8 +101,6 @@ static List<Bebebida> cardapioBebidas = Arrays.asList(
         }
     }
 
-
-
     private static void FuncionarioListarPedidos() {
         if (pedidos.isEmpty()) {
             System.out.println("Nenhum pedido cadastrado.");
