@@ -51,7 +51,7 @@ Ao logar como cliente, você pode:
 
 ## Dicas de uso
 
-- **Cadastre clientes antes de fazer pedidos!**
+- **Cadastre clientes como funcionário antes de fazer pedidos!**
 - O ID do cliente é gerado automaticamente ao cadastrar.
 - O ID do pedido também é gerado automaticamente.
 - O sistema é todo em memória (ao fechar, os dados somem).
@@ -72,7 +72,7 @@ Ao logar como cliente, você pode:
 
 _Wilian Gonçalves Lima_,
 _Andre Lacerda_,
-_Gabriella Moreida de Oliveira_,
+_Gabriela Moreira de Oliveira _,
 _Lilian Paula_
 
 Divirta-se testando e adaptando o sistema! 🍕
