@@ -34,6 +34,7 @@ Escolha digitando o número da opção!
 Ao logar como funcionário, você pode:
 
 - **Listar pedidos:** Veja todos os pedidos feitos, com status, valor e cliente.
+- **Listar clientes:** veja todos os clientes cadastrados.
 - **Atualizar status de pedido:** Mude o status de um pedido (ex: de "Pendente" para "Em preparo").
 - **Cadastrar cliente:** Adicione novos clientes ao sistema (nome, email, telefone).
 - **Voltar:** Retorna ao menu inicial.
@@ -45,13 +46,14 @@ Ao logar como funcionário, você pode:
 Ao logar como cliente, você pode:
 
 - **Fazer novo pedido:** Informe seu ID de cliente e o valor do pedido para registrar um novo pedido.
+- **Listar Pedidos:** veja todos os pedidos cadastrados, logado como cliente.
 - **Voltar:** Retorna ao menu inicial.
 
 ---
 
 ## Dicas de uso
 
-- **Cadastre clientes como funcionário antes de fazer pedidos!**
+- **Cadastre clientes antes de fazer pedidos!**
 - O ID do cliente é gerado automaticamente ao cadastrar.
 - O ID do pedido também é gerado automaticamente.
 - O sistema é todo em memória (ao fechar, os dados somem).
@@ -72,7 +74,7 @@ Ao logar como cliente, você pode:
 
 _Wilian Gonçalves Lima_,
 _Andre Lacerda_,
-_Gabriela Moreira de Oliveira _,
+_Gabriela Moreira de Oliveira_,
 _Lilian Paula_
 
 Divirta-se testando e adaptando o sistema! 🍕
