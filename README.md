@@ -23,6 +23,7 @@ Assim que rodar, você verá:
 
 - Login como Funcionário
 - Login como Cliente
+- Login como Entregador
 - Sair
 
 Escolha digitando o número da opção!
@@ -50,6 +51,13 @@ Ao logar como cliente, você pode:
 - **Voltar:** Retorna ao menu inicial.
 
 ---
+
+### Entregador 🛵.
+
+Ao Logar como entregador, o entregador você pode:
+
+- **Ver os produtos já listados** O Entregador tema acesso a todos os pedidos já listados no sistema.
+- **Voltar** Pode voltar para o menu de Login.
 
 ## Dicas de uso
 

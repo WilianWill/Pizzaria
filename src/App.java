@@ -3,6 +3,7 @@ import java.util.*;
 
 
 public class App {
+
     static List<Pedido> pedidos = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
     static List<Cliente> clientes = new ArrayList<>();
@@ -22,9 +23,10 @@ static List<Bebebida> cardapioBebidas = Arrays.asList(
 
     public static void main(String[] args) {
         while (true) {
-            System.out.println("=== Bem-vindo à Pizzaria ===");
+            System.out.println("=== Bem-vindo ao Papitto's Pizzas ===");
             System.out.println("1. Login como Funcionário");
             System.out.println("2. Login como Cliente");
+            System.out.println("3. Login como Entregador");
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
@@ -36,6 +38,9 @@ static List<Bebebida> cardapioBebidas = Arrays.asList(
                     break;
                 case 2:
                     menuCliente();
+                    break;
+                case 3:
+                    menuEntregador();
                     break;
                 case 0:
                     System.out.println("Saindo...");
@@ -78,6 +83,7 @@ static List<Bebebida> cardapioBebidas = Arrays.asList(
     }
 
     private static void menuCliente() {
+
         while (true) {
             System.out.println("\n--- Menu Cliente ---");
             System.out.println("1. Fazer novo pedido");
@@ -92,6 +98,26 @@ static List<Bebebida> cardapioBebidas = Arrays.asList(
                     break;
                 case 2:
                     ClienteListarPedidos();
+                    break;
+                case 0:
+                    return;
+                default:
+                    System.out.println("Opção inválida!");
+            }
+        }
+    }
+
+    private static void menuEntregador() {
+        while (true) {
+            System.out.println("\n--- Menu Entregador ---");
+            System.out.println("1. Listar pedidos");
+            System.out.println("0. Voltar");
+            System.out.print("Escolha uma opção: ");
+            int opcao = scanner.nextInt();
+            scanner.nextLine();
+            switch (opcao) {
+                case 1:
+                    EntregadorListarPedidos();
                     break;
                 case 0:
                     return;
@@ -128,7 +154,6 @@ static List<Bebebida> cardapioBebidas = Arrays.asList(
         System.out.println("Pedido não encontrado.");
     }
 
-    
     private static void FuncionarioCadastrarCliente() {
         System.out.print("Nome: ");
         String nome = scanner.nextLine();
@@ -153,6 +178,20 @@ static List<Bebebida> cardapioBebidas = Arrays.asList(
             System.out.println("ID: " + c.getId() + ", Nome: " + c.getNome() + ", Email: " + c.getEmail() + ", Telefone: " + c.getTelefone());
         }
     }
+
+    private static void EntregadorListarPedidos() {
+    
+        if (pedidos.isEmpty()) {
+            System.out.println("Nenhum pedido cadastrado.");
+            return;
+        }
+    
+        for (Pedido p : pedidos) {
+            System.out.println("ID: " + p.getIdPedido() + ", Cliente: " + p.getIdCliente() + ", Valor: R$" + p.getValorTotal() + ", Status: " + p.getStatusPedido() + ", Data: " + p.getDataPedido());
+        }
+    
+    }
+    
 
     private static void ClienteFazerPedido() {
         System.out.print("Digite seu ID de cliente: ");
