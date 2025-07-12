@@ -39,8 +39,9 @@ git clone https://github.com/WilianWill/Pizzaria.git
 
 Assim que rodar, você verá:
 
-- Login como Funcionário
-- Login como Cliente
+- Login como Funcionário 👨‍🍳
+- Login como Cliente 👤
+- Login como Entregador 🛵
 - Sair
 
 Escolha digitando o número da opção!
@@ -69,9 +70,16 @@ Ao logar como cliente, você pode:
 
 ---
 
+### 🛵 Entregador
+
+Ao logar como Entregador, você pode:
+
+- **Listar pedidos** Veja todos os pedidos dos clientes.
+- **Voltar** Volte para o menu principal de Login do programa!
+
 ## Dicas de uso
 
-- **Cadastre cliente 🛵.s antes de fazer pedidos!**
+- **Cadastre clientes antes de fazer pedidos!**
 - O ID do cliente é gerado automaticamente ao cadastrar.
 - O ID do pedido também é gerado automaticamente.
 - O sistema é todo em memória (ao fechar, os dados somem).
