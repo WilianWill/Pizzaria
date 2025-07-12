@@ -73,7 +73,7 @@ static List<Bebebida> cardapioBebidas = Arrays.asList(
                     break;
                 case 4:
                     FuncionarioCadastrarCliente();
-                    return;
+                    break;
                 case 0:
                     return;
                 default:
@@ -161,8 +161,26 @@ static List<Bebebida> cardapioBebidas = Arrays.asList(
         String email = scanner.nextLine();
         System.out.print("Telefone: ");
         String telefone = scanner.nextLine();
-        // Endereço simples 
+        
+        // Cadastro de endereço
+        System.out.print("Rua: ");
+        String rua = scanner.nextLine();
+        System.out.print("Número: ");
+        String numero = scanner.nextLine();
+        System.out.print("Complemento: ");
+        String complemento = scanner.nextLine();
+        System.out.print("Bairro: ");
+        String bairro = scanner.nextLine();
+        System.out.print("Cidade: ");
+        String cidade = scanner.nextLine();
+        System.out.print("Estado: ");
+        String estado = scanner.nextLine();
+        System.out.print("CEP: ");
+        String cep = scanner.nextLine();
+        Endereco endereco = new Endereco(rua, numero, complemento, bairro, cidade, estado, cep);
+            
         List<Endereco> enderecos = new ArrayList<>();
+        enderecos.add(endereco);
         Cliente novo = new Cliente(nome, email, telefone, enderecos);
         novo.setId(clientes.size() + 1);
         clientes.add(novo);
@@ -176,6 +194,10 @@ static List<Bebebida> cardapioBebidas = Arrays.asList(
         }
         for (Cliente c : clientes) {
             System.out.println("ID: " + c.getId() + ", Nome: " + c.getNome() + ", Email: " + c.getEmail() + ", Telefone: " + c.getTelefone());
+            
+            for (Endereco e : c.getEndereco()){
+                System.out.println(", Endereco: " + e.getRua() + ", " + e.getNumero() + ", " + e.getComplemento() + ", " + e.getBairro() + ", " + e.getCidade() + ", " + e.getEstado() + ", " + e.getCep());
+            }
         }
     }
 

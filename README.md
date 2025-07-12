@@ -83,6 +83,6 @@ Ao Logar como entregador, o entregador você pode:
 _Wilian Gonçalves Lima_,
 _Andre Lacerda_,
 _Gabriela Moreira de Oliveira_,
-_Lilian Paula_
+_Lilian Gomes Ferreira de Paula_
 
 Divirta-se testando e adaptando o sistema! 🍕
