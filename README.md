@@ -4,6 +4,8 @@ Bem-vindo ao Papitto´s Pizzas , sistema de pizzaria feito em Java! Aqui você p
 
 ## Como rodar o programa
 
+_Para pegar sempre a versão atualizada do projeto, clone o repositório do Github, caso baixe via ZIP, pode acontecer de que baixe uma versão desatualizada ou quebrada!"_
+
 0. Antes de começar, **Vamos clonar o repositório do projeto:**
 
 - No terminal, digite:
