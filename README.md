@@ -4,6 +4,22 @@ Bem-vindo ao Papitto´s Pizzas , sistema de pizzaria feito em Java! Aqui você p
 
 ## Como rodar o programa
 
+0. Antes de começar, **Vamos clonar o repositório do projeto:**
+
+- No terminal, digite:
+
+```
+git clone https://github.com/WilianWill/Pizzaria.git
+
+```
+
+- Entre na pasta do projeto e digite:
+
+  ```
+  cd Pizzaria
+
+  ```
+
 1. **Compile todos os arquivos Java:**
    - No terminal, navegue até a pasta `src` e rode:
      ```
@@ -23,7 +39,6 @@ Assim que rodar, você verá:
 
 - Login como Funcionário
 - Login como Cliente
-- Login como Entregador
 - Sair
 
 Escolha digitando o número da opção!
@@ -52,21 +67,14 @@ Ao logar como cliente, você pode:
 
 ---
 
-### Entregador 🛵.
-
-Ao Logar como entregador, o entregador você pode:
-
-- **Ver os produtos já listados** O Entregador tema acesso a todos os pedidos já listados no sistema.
-- **Voltar** Pode voltar para o menu de Login.
-
 ## Dicas de uso
 
-- **Cadastre clientes antes de fazer pedidos!**
+- **Cadastre cliente 🛵.s antes de fazer pedidos!**
 - O ID do cliente é gerado automaticamente ao cadastrar.
 - O ID do pedido também é gerado automaticamente.
 - O sistema é todo em memória (ao fechar, os dados somem).
 
-## Sobre o código
+## Sobre oódigo
 
 - O menu principal e as funcionalidades estão em `App.java`.
 - As classes `Cliente`, `Pedido`, etc., são apenas modelos de dados.
